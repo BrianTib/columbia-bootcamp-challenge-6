@@ -65,7 +65,7 @@ async function getCustomCityCoordinates(city) {
     if (localCoordinates) { return localCoordinates; }
 
     // Make the API request
-    const request = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city},US&appid=${atob(API_KEY)}`);
+    const request = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city},US&appid=${atob(API_KEY)}`);
     if (!request.ok) { return; }
 
     const response = await request.json();
