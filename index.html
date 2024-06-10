@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Roboto Font -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Weather Dashboard</h1>
+    </nav>
+
+    <main>
+        <aside id="cities-search-display" class="card secondary">
+            <!-- City search form-->
+            <form id="search-city-form">
+                <label for="city-name">Search for a City</label>
+                <!-- 🗽 -->
+                <input required name="city-name" type="text" placeholder="New York" minlength="2" maxlength="16">
+
+                <button type="submit" class="card secondary">Search</button>
+            </form>
+
+            <hr />
+
+            <!-- List of common cities -->
+            <ul id="common-cities-list"></ul>
+        </aside>
+
+        <section id="weather-display" class="loading">
+            <!-- Current City display -->
+            <div id="current-city-forecast" class="card accent">
+            </div>
+
+            <h3>5-Day Forecast</h3>
+            <hr />
+
+            <!-- 5-Day forecast -->
+            <ul id="forecast-list">
+            </ul>
+        </section>
+    </main>
+
+    <!-- JQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+</body>
+</html>
