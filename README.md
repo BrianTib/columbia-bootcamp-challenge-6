@@ -10,6 +10,7 @@ This is a weather dashboard application. It allows users to search for weather i
 - [Github Pages URL](https://briantib.github.io/columbia-bootcamp-challenge-6)
 
 # Screenshots
+![Functionality](/assets/images/functionality.gif?raw=true)
 ![Desktop View](/assets/images/desktop-view.png?raw=true)
 ![Desktop View 2](/assets/images/desktop-view2.png?raw=true)
 ![Mobile View](/assets/images/mobile-view.png?raw=true)
